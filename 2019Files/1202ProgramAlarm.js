@@ -27,7 +27,7 @@ const runProgram = function (myCode) {
   return myCode;
 };
 
-const ProgramAlarm = function (code) {
+const nounVerbCombinations = function (code) {
   for (let noun = 1; noun <= 99; noun++) {
     for (let verb = 1; verb <= 99; verb++) {
       const myCode = [...code];
@@ -46,7 +46,7 @@ const main = () => {
     .map(Number);
   const mycode = [...code];
   console.log(runProgram(mycode));
-  console.log(ProgramAlarm(code));
+  console.log(nounVerbCombinations(code));
 };
 
 main();
